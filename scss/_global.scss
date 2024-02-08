@@ -1,0 +1,169 @@
+html,
+body {
+	height: 100%;
+}
+
+body {
+	font-family: sans-serif;
+	color: #4d4d4d;
+}
+
+.container {
+	max-width: 1380px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+.wrapper {
+	display: flex;
+	justify-content: end;
+}
+
+.logo {
+	width: 176px;
+	height: 40px;
+}
+
+.modal {
+	position: absolute;
+	border-radius: 10px;
+	box-sizing: border-box;
+	background-color: #0c0c0c !important;
+	box-shadow: rgba(0, 0, 0, 0.04) 0px 4px 8px;
+	width: 630px;
+	height: 600px;
+	&__img {
+		text-align: center;
+		width: 100%;
+		position: relative;
+		background-color: #0c0c0c;
+		z-index: 99999;
+		&::before {
+			content: "";
+			height: 4px;
+			width: 100%;
+			left: 0px;
+			background: rgb(204, 0, 0) none repeat scroll 0% 0%;
+			position: absolute;
+			top: calc(50% - 4px);
+			z-index: -10;
+		}
+	}
+
+	&__form {
+		padding-top: 30px;
+	}
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&__title {
+		color: #fff;
+		line-height: 1.625;
+		margin: 0px 0px 8px;
+		margin-bottom: 8px;
+		font-size: 28px;
+		font-weight: 700;
+	}
+
+	&__text {
+		color: #fff;
+		font-size: 14px;
+	}
+
+	&__form {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__input-text {
+		padding: 5px 0 5px;
+	}
+
+	&__input {
+		box-sizing: border-box;
+		width: 288px;
+		height: 40px;
+		padding: 8px;
+		background-color: transparent;
+		border: 1px solid #fff;
+		border-radius: 3px;
+		border-width: 1px;
+		color: rgb(254, 254, 254);
+		font-size: 16px;
+	}
+
+	.modal__input-text {
+		font-size: 12px;
+		color: rgb(254, 254, 254);
+	}
+
+	.password {
+		position: relative;
+		margin-top: 30px;
+	}
+
+	.show-password__img,
+	.hide-password__img {
+		position: absolute;
+		top: 334px;
+		right: 0;
+		bottom: 0;
+		left: 65%;
+	}
+
+	.modal__link {
+		padding-top: 30px;
+		color: #fff;
+		font-size: 13px;
+		font-weight: 700;
+	}
+
+	.checkbox__inner {
+		padding-top: 15px;
+		display: flex;
+	}
+
+	&__checkbox {
+		border: none;
+		width: 15px;
+		height: 15px;
+		border-radius: 0px;
+		outline: none;
+	}
+
+	.checkbox-text {
+		padding-left: 5px;
+		font-size: 13px;
+		font-weight: 700;
+		color: #fff;
+	}
+}
+
+.modal__submit {
+	cursor: pointer;
+	margin-top: 15px;
+	border-radius: 2px;
+	font-weight: 700;
+	font-size: 16px;
+	background-color: rgb(254, 254, 254);	
+	min-width: 80px;
+	min-height: 48px;
+	width: 100%;
+	border: none;
+	outline: none;
+	position: relative;
+	value {
+		color: rgb(12, 12, 12);
+	}
+}
+
+.submit-img {
+	position: absolute;
+	top: 78.5%;
+	left: 41.7%;
+}
